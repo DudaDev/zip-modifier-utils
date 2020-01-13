@@ -3,18 +3,11 @@ const chokidar = require("chokidar");
 const express = require("express");
 const staticZip = require("express-static-zip");
 
-
 /**
- * 
- * @param {*} param0 
+ *
+ * @param {*} param0
  */
-async function serveZips({
-  zipFile,
-  port,
-  modifiedPort,
-  zipRoot,
-  modifiers
-}) {
+async function serveZips({ zipFile, port, modifiedPort, zipRoot, modifiers }) {
   // serve original file
   server.serve(zipFile, port, zipRoot);
   // create zip modifier
@@ -87,12 +80,12 @@ function runAndWatch(path, fn, options) {
  * @param {function} predicate the paths to clear
  */
 function clearCache(predicate) {
-    // clean cache if needed
-    const cache = Object.keys(require.cache).filter(predicate);
-    if (cache.length) {
-      console.log("cleaning cache");
-      cache.forEach(id => delete require.cache[id]);
-    }
+  // clean cache if needed
+  const cache = Object.keys(require.cache).filter(predicate);
+  if (cache.length) {
+    console.log("cleaning cache");
+    cache.forEach(id => delete require.cache[id]);
+  }
 }
 
 module.exports = {
