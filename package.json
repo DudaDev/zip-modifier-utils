@@ -1,0 +1,28 @@
+{
+  "name": "@dudadev/zip-modifier-utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DudaDev/zip-modifier-utils.git"
+  },
+  "keywords": [],
+  "author": "Duda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DudaDev/zip-modifier-utils/issues"
+  },
+  "homepage": "https://github.com/DudaDev/zip-modifier-utils#readme",
+  "devDependencies": {
+    "chokidar": "^3.3.1",
+    "express": "^4.17.1",
+    "express-static-zip": "^0.2.2"
+  },
+  "peerDependencies": {
+    "@dudadev/s3-zip-modifier": "*"
+  }
+}
