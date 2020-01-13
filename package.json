@@ -17,12 +17,14 @@
     "url": "https://github.com/DudaDev/zip-modifier-utils/issues"
   },
   "homepage": "https://github.com/DudaDev/zip-modifier-utils#readme",
-  "devDependencies": {
-    "chokidar": "^3.3.1",
-    "express": "^4.17.1",
-    "express-static-zip": "^0.2.2"
-  },
+  "devDependencies": {},
   "peerDependencies": {
     "@dudadev/s3-zip-modifier": "*"
+  },
+  "dependencies": {
+    "chokidar": "^3.3.1",
+    "experss": "0.0.1-security",
+    "express": "^4.17.1",
+    "express-static-zip": "^0.2.2"
   }
 }
